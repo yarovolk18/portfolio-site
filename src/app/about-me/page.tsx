@@ -32,19 +32,19 @@ export default function AboutMe() {
 
           {/* About Text */}
           <p className="text-lg text-gray-300">
-            I'm a 3rd-year Computer Science student at the University of Ottawa with a passion for leadership, technology & teaching.
+            I&apos;m a 3rd-year Computer Science student at the University of Ottawa with a passion for leadership, technology & teaching.
           </p>
 
           <p className="text-lg text-gray-300">
-            As Co-Director & Developer of <Link href="https://uottahack.ca" className={styles.glowLink}>uOttaHack</Link>, Canada’s 2nd largest Hackathon, I led a team of 30 to execute incredible events in 2023, 2024 & 2025.
+            As Co-Director & Developer of <Link href="https://uottahack.ca" className={styles.glowLink}>uOttaHack</Link>, Canada&apos;s 2nd largest Hackathon, I led a team of 30 to execute incredible events in 2023, 2024 & 2025.
           </p>
 
           <p className="text-lg text-gray-300">
-            I’ve worked at the <Link href="https://cyberrange.ca" className={styles.glowLink}>Cyberrange</Link> lab (a collaboration between IBM & uOttawa) on cybersecurity training simulations & interned at <Link href="https://gdmissionsystems.ca/" className={styles.glowLink}>General Dynamics</Link>, deploying AWS infrastructure & K3S for cloud-based solutions.
+            I&apos;ve worked at the <Link href="https://cyberrange.ca" className={styles.glowLink}>Cyberrange</Link> lab (a collaboration between IBM & uOttawa) on cybersecurity training simulations & interned at <Link href="https://gdmissionsystems.ca/" className={styles.glowLink}>General Dynamics</Link>, deploying AWS infrastructure & K3S for cloud-based solutions.
           </p>
 
           <p className="text-lg text-gray-300">
-            Currently, I’m a BI & Data Engineering Consultant at <Link href="https://cruadjusters.com/" className={styles.glowLink}>CRU Group</Link> & advisor at <Link href="https://uottahack.ca" className={styles.glowLink}>uOttaHack</Link> & <Link href="https://www.instagram.com/uottawasesa/" className={styles.glowLink}>SESA</Link>.
+            Currently, I&apos;m a BI & Data Engineering Consultant at <Link href="https://cruadjusters.com/" className={styles.glowLink}>CRU Group</Link> & advisor at <Link href="https://uottahack.ca" className={styles.glowLink}>uOttaHack</Link> & <Link href="https://www.instagram.com/uottawasesa/" className={styles.glowLink}>SESA</Link>.
           </p>
 
           <p className="text-lg text-gray-300">

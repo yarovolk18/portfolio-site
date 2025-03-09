@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Waveform() {
   const barCount = 270; // Increased number of bars
-  const bars = Array.from({ length: barCount }, (_, i) => ({
+  const bars = Array.from({ length: barCount }, () => ({
     delay: Math.random() * 1.5,
     height: 200//Math.random() * 100 + 150, // Random heights between 40px and 120px
   }));

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import styles from "@/styles/footer.module.css"; // Import CSS Module
 

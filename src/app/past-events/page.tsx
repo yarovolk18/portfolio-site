@@ -50,9 +50,9 @@ export default function PastEvents() {
     const intervalId = setInterval(() => {
       slideGallery("next");
     }, 5000);
-
+  
     return () => clearInterval(intervalId);
-  }, [index]);
+  }, [index, slideGallery]);
 
   return (
     <div className={styles.pastEventsContainer}>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Waveform from "@/components/Waveform";
 import Typewriter from "@/components/typewriter";
 import styles from "@/styles/welcomePage.module.css"; // Import styles
