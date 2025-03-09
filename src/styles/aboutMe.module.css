@@ -1,0 +1,180 @@
+/*ABOUT ME */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 80rem;
+}
+
+.imageContainer {
+  width: 60%;
+  max-width: 600px;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+}
+
+.statCard {
+  width: 30%;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: white; /* Ensures text stays visible */
+}
+
+.statCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+}
+
+.statText {
+  position: relative; /* Keeps text above the animation */
+  z-index: 2;
+  color: white; /* Ensures text is visible */
+}
+
+.waveformContainer {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Keeps waveform behind text */
+}
+
+.statCard:hover .waveformContainer {
+  opacity: 1;
+}
+
+.glowLink {
+  position: relative;
+  color: #25404A;
+  
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.glowLink:hover {
+  color: white; /* Slight color change */
+  text-shadow: 0 0 8px #25404A, 0 0 15px #25404A;
+}
+
+
+.btn-wave {
+    display: inline-block;
+    padding: 12px 24px;
+    background: url('/wave-button-bg.png') center/cover no-repeat;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn-wave:hover {
+    transform: scale(1.05);
+  }
+
+  .button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    border: 2px solid #25404A;
+    box-shadow: 0px 4px 20px #25404A;
+  }
+
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+  }
+
+@media(max-width: 768px) { 
+  /*ABOUT ME */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+  }
+  .imageContainer {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .statsContainer {
+    display: grid;
+    justify-content: left;
+    gap: 1rem;
+  }
+  .statCard {
+    width: 150%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    color: white; /* Ensures text stays visible */
+  }
+}

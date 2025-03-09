@@ -1,0 +1,83 @@
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+/* "Go Back" button */
+.goBack {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.goBack:hover {
+    color: #25404A;
+}
+
+/* Title */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Description text */
+.text {
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 1rem;
+}
+
+/* PDF Viewer */
+.pdfViewer {
+    width: 100%;
+    max-width: 800px;
+    height: 800px;
+    border: 2px solid #25404A;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .pdfViewer {
+        height: 600px;
+    }
+    /* Download button for mobile */
+    .downloadButton {
+        margin-top: 1.5rem;
+        padding: 12px 20px;
+        background-color: #25404A;
+        color: black;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .downloadButton:hover {
+        background-color: #00a3a3;
+    }
+
+}

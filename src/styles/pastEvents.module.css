@@ -1,0 +1,212 @@
+.pastEventsContainer {
+    width: 100%;
+    height: 115vh;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .eventsList {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .eventLink {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+    padding: 5px 10px;
+  }
+  
+  .eventLink:hover {
+    color: white;
+    text-shadow: 0 0 8px #25404A, 0 0 15px #25404A;
+    transform: scale(1.05);
+  }
+  
+  
+  .eventCard {
+    width: 20rem; /* Increased width */
+    height: 16.5rem; /* Adjust height */
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #25404A;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+    position: absolute;
+    opacity: 0.9;
+  }
+  
+  .eventCard:hover {
+    transform: translateY(-10px);
+    border: 2px solid #25404A;
+    box-shadow: 0px 4px 20px #25404A;
+  }
+  
+  .eventImageWrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .eventImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .eventTitle {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .eventTitle:hover {
+    color: #25404A; /* Change text color */
+    text-shadow: 0 0 10px #25404A; /* Glow effect */
+    text-decoration: underline; /* Underline effect */
+  }
+  
+  .eventCard a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navigation {
+    margin-top: 2rem;
+  }
+  
+  .navigation button {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0.1px solid white;
+    border-radius: 5px;
+  }
+  
+  .navigation button:hover {
+    background: transparent;
+    border: 2px solid #25404A;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px #25404A;
+  }
+  .sliderContainer {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100px;
+    border: 2px solid white;
+  }
+
+  .sliderContainer:hover {
+    border: 3px solid #25404A;
+    box-shadow: 0 4px 20px #25404A;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .eventImageWrapper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .eventImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+
+@media (max-width: 768px) {
+  .pastEventsContainer {
+    width: 100%;
+    height: 70vh;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .sliderContainer {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .eventImageWrapper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .eventImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .eventTitle {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+}

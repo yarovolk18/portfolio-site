@@ -1,0 +1,165 @@
+/* Full-screen experience container */
+.experienceWrapper {
+    height: 100vh;
+    position: relative;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Experience title */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+
+/* Experience Card */
+.experienceCard {
+    width: 90%;
+    max-width: 900px;
+    height: 30vh;
+    background: black;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #25404A;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Default hidden waveform */
+.experienceCard .waveformBackground {
+    position: absolute;
+    justify-content: center;
+    top: 6rem;
+    left: 0;
+    width: 200%;
+    height: 10%;
+    pointer-events: none; /* Prevent interaction */
+    z-index: -1;
+    opacity: 1;
+}
+
+/* Hover effect: Show waveform */
+.experienceCard:hover {
+    background: black;
+    backdrop-filter: blur(10px);
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px #25404A;
+}
+
+/* Make waveform visible on hover */
+.experienceCard:hover .waveformBackground {
+    opacity: 1;
+}
+  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+.box {
+    background: black;
+    position: relative;
+    border-radius: 10px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+
+  
+  /* ✅ Hide waveform by default */
+.waveform {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    width: 150%;
+    height: 100px;
+    opacity: 0;
+    z-index: 0;
+  }
+
+.experienceCard h1{
+    font-size: 1.5rem;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1.5rem; /* Spacing between items */
+    padding: 10px;
+}
+  
+.skillItem {
+    display: flex;
+    gap: 0.2rem;
+    font-size: 14px;
+    color: white;
+    white-space: nowrap;
+}
+
+@media(max-width: 768px) {
+    /* Full-screen experience container */
+    .experienceWrapper {
+        height: 120vh;
+        position: relative;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        left: 2%;
+    }
+      
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: top;
+        align-items: top;
+        gap: 0rem;
+    }
+    .skillsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 1rem; /* Spacing between items */
+        padding: 10px;
+        justify-content: top;
+        align-items:center ;
+    }
+    .skillItem {
+        display: flex;
+        
+        gap: 0.3rem;
+        font-size: 10px;
+        color: white;
+        white-space: nowrap;
+    }
+    /* Default hidden waveform */
+    .experienceCard .waveformBackground {
+        position: absolute;
+        justify-content: center;
+        top: 4rem;
+        left: 0;
+        width: 200%;
+        height: 10%;
+        pointer-events: none; /* Prevent interaction */
+        z-index: -1;
+        opacity: 1;
+    }
+}

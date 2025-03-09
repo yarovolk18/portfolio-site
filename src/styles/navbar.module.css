@@ -1,0 +1,50 @@
+/* General navbar styles */
+.navbar {
+    position: fixed;
+    top: 49rem;
+    left: 10%;
+    width: 80%;
+    background: transparent;/* Transparent black background */
+    border-radius: 100px;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .desktopNavbar,
+  .mobileNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .desktopNavbar li,
+  .mobileNavbar li {
+    margin: 0 20px;
+  }
+  
+  /* Hide mobile navbar by default */
+  .mobileNavbar {
+    display: none;
+  }
+  
+  /* Mobile navbar styles */
+  @media (max-width: 768px) {
+    .desktopNavbar {
+      display: none; /* Hide desktop navbar */
+    }
+    
+    .mobileNavbar {
+        display: flex; /* Show mobile navbar */
+        align-items: center;
+        background: #25404a33;/* Transparent black background */
+        border-radius: 100px;
+        height: 2.5rem;
+    }
+  }
+  
